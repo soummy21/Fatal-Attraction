@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9010083369087957822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9010083369087957816}
+  - component: {fileID: 9010083369087957817}
+  m_Layer: 0
+  m_Name: GameplayController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9010083369087957816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9010083369087957822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9010083369087957817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9010083369087957822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd691b5eb8fad94294efb9e473eb2cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UI_Left: {fileID: 0}
+  UI_Text: {fileID: 0}
+  Player_Health: {fileID: 0}
+  pauseMenu: {fileID: 0}
+  successMessage: {fileID: 0}
+  gameStartMessage: {fileID: 0}
+  failMessage: {fileID: 0}
+  missionText: []
+  successText: {fileID: 0}
+  failureText: {fileID: 0}
+  startText: {fileID: 0}
+  bulletPoolCreated: 0
+  rocketPoolCreated: 0
+  playerDead: 0
+  fenceBroken: 0
+  panel: {fileID: 8300000, guid: 22d7a387a0cb48b48a7aa9a32d1ac9f7, type: 3}
+  winSound: {fileID: 8300000, guid: ab908743a48564c4fb00938725ada69e, type: 3}
+  buttons: {fileID: 8300000, guid: ba126f548f8b4bf4796730a121916166, type: 3}
