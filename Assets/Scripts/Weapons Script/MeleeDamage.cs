@@ -8,6 +8,14 @@ public class MeleeDamage : MonoBehaviour
     [SerializeField] LayerMask collisionLayer;
     float radius = 2f;
 
+    private MeleeController meleeController;
+    private ZombieController zombieController;
+
+    private void Awake()
+    {
+        meleeController = GetComponentInParent<MeleeController>();
+        zombieController = target.transform.root.GetComponent<ZombieController>()
+    }
 
     private void FixedUpdate()
     {
@@ -17,7 +25,7 @@ public class MeleeDamage : MonoBehaviour
 
             if (target.tag == TagManager.ZOMBIE_HEALTH_TAG)
             {
-                target.transform.root.GetComponent<ZombieController>().ZombieHurt(this.GetComponentInParent<MeleeController>().defaultConfig.damage);
+                zombieController.ZombieHurt(meleeController.defaultConfig.damage);
             }
 
         }
